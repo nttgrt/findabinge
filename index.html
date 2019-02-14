@@ -1,0 +1,87 @@
+<!--This product uses the TMDb API but is not endorsed or certified by TMDb.-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>What to Watch</title>
+    <meta charset="utf-8"/>
+    <meta keywords="Nathan Dawson">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Cairo:200,300,400,600,700,900" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="container" id="Side_Menu">
+    <ul id="Side_List">
+        <!--li id="Side_Item">Item 2</li>
+        <li id="Side_Item">Item 3</li-->
+        <form id="Search_Form">
+            <label>Search</label>
+            <input id="movieInput" type="text" placeholder="movie name"></input>
+            <input id="movieSubmit" type="submit"></input>
+        </form>
+        <li id="Side_Item">Filter options coming soon</li>
+        <li id="Side_Item">This product uses the TMDb API but is not endorsed or certified by TMDb.</li>
+        <li id="Side_Item"><a href="https://github.com/nttgrt/WebProgramming/tree/CreativeAssignment2" id="Side_Link">GitHub Link</a></li>
+    </ul>
+</div> 
+
+<div class="container-fluid" id="Head_Menu">
+    <p id="Head_Title"><img src="Images/RoughLogo.png" class="Head_Logo" alt="Logo"></p>
+    <ul class="Head_List">
+        <li id="Head_Item" class="Head_Active">Movies</li>
+        <li id="Head_Item"><a href="shows.html" id="Head_Link">Shows</a></li>
+        <li id="Head_Item"><a href="games.html" id="Head_Link">Games</a></li>
+        <!--li id="Head_Item">Shows</li>
+        <li id="Head_Item">Games</li-->
+        <li id="Head_Item_Right"><img src="Images/User_Icon.jpg" alt="profile picture" id="Head_Item_Right_Image" onclick="displayProfileDropdown()"></li>
+    </ul>
+</div>
+
+<div id="Head_DropMenu">
+    <p>I'm typing here to test some stuff</p>
+</div>
+
+
+<br>
+
+<div class="justify-content" id="Image_Container">
+    <div class="row" id="movieResults"> 
+
+    </div>
+</div>
+<!--div class="justify-content" id="Image_Container" > 
+    <div class="row">
+        <div class="col-sm" id="reg_img_div"><img src="Images/MoviePosters/FMF.jpg" id="reg_img" alt="FMF Poster" align="middle"></div>
+        <div class="col-sm" id="reg_img_div"><img src="Images/MoviePosters/AntMan.jpg" id="reg_img" alt="FMF Poster" align="middle"></div>
+        <div class="col-sm" id="reg_img_div"><img src="Images/MoviePosters/Apollo13.jpg" id="reg_img" alt="FMF Poster" align="middle"></div>
+        <div class="col-sm" id="reg_img_div"><img src="Images/MoviePosters/HowToTrainYourDragon.jpg" id="reg_img" alt="FMF Poster" align="middle"></div>
+        <div class="col-sm" id="reg_img_div"><img src="Images/MoviePosters/Inception.jpg" id="reg_img" alt="FMF Poster" align="middle"></div>
+        <div class="col-sm" id="reg_img_div"><img src="Images/MoviePosters/InfinityWar.jpg" id="reg_img" alt="FMF Poster" align="middle"></div>
+        <div class="col-sm" id="reg_img_div"><img src="Images/MoviePosters/InsideOut.jpg" id="reg_img" alt="FMF Poster" align="middle"></div>
+        <div class="col-sm" id="reg_img_div"><img src="Images/MoviePosters/IsleOfDogs.jpg" id="reg_img" alt="FMF Poster" align="middle"></div>
+        <div class="col-sm" id="reg_img_div"><img src="Images/MoviePosters/Jaws.jpg" id="reg_img" alt="FMF Poster" align="middle"></div>
+        <div class="col-sm" id="reg_img_div"><img src="Images/MoviePosters/LastJedi.jpg" id="reg_img" alt="FMF Poster" align="middle"></div>
+        <div class="col-sm" id="reg_img_div"><img src="Images/MoviePosters/LegoMovie.jpg" id="reg_img" alt="FMF Poster" align="middle"></div>
+        <div class="col-sm" id="reg_img_div"><img src="Images/MoviePosters/MazeRunner.jpg" id="reg_img" alt="FMF Poster" align="middle"></div>
+        <div class="col-sm" id="reg_img_div"><img src="Images/MoviePosters/OrderOfThePhoenix.jpg" id="reg_img" alt="FMF Poster" align="middle"></div>
+        <div class="col-sm" id="reg_img_div"><img src="Images/MoviePosters/RevengeOfTheJedi.jpg" id="reg_img" alt="FMF Poster" align="middle"></div>
+        <div class="col-sm" id="reg_img_div"><img src="Images/MoviePosters/ShapeOfWater.jpg" id="reg_img" alt="FMF Poster" align="middle"></div>
+        <div class="col-sm" id="reg_img_div"><img src="Images/MoviePosters/Shining.jpg" id="reg_img" alt="FMF Poster" align="middle"></div>
+        <div class="col-sm" id="reg_img_div"><img src="Images/MoviePosters/SpiderMan.jpg" id="reg_img" alt="FMF Poster" align="middle"></div>
+        <div class="col-sm" id="reg_img_div"><img src="Images/MoviePosters/WinnieThePooh.jpg" id="reg_img" alt="FMF Poster" align="middle"></div>
+        <div class="col-sm" id="reg_img_div"><img src="Images/MoviePosters/WonderWoman.jpg" id="reg_img" alt="FMF Poster" align="middle"></div>
+        <div class="col-sm" id="reg_img_div"><img src="Images/MoviePosters/Interstellar.jpg" id="reg_img" alt="FMF Poster" align="middle"></div>
+    </div>
+
+    <a href="https://github.com/nttgrt/WebProgramming/upload/CreativeAssignment1">GitHub Link</a>
+</div-->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
+<script text="type/javascript" src="myscripts.js"></script>
+
+</body>
+
+</html>

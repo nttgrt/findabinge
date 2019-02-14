@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>What to Watch</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Cairo:200,300,400,600,700,900" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="myscripts.js"></script>
+    <script language="JavaScript">
+        document.getElementById("Head_Menu").style.background-color="red";
+    </script>
+</head>
+
+<body>
+<div class="container" id="Side_Menu">
+    <ul id="Side_List">
+        <li id="Side_Item">(filter options coming soon ...)</li>
+        <!--li id="Side_Item">Item 2</li>
+        <li id="Side_Item">Item 3</li-->
+
+
+    </ul>
+</div> 
+
+<div class="container-fluid" id="Head_Menu">
+    <p id="Head_Title"><img src="Images/RoughLogo.png" class="Head_Logo" alt="Logo"></p>
+    <ul class="Head_List">
+            <li id="Head_Item"><a href="index.html">Movies</a></li>
+            <li id="Head_Item"><a href="shows.html">Shows</a></li>
+            <li id="Head_Item" class="Head_Active">Games</li>
+        <li id="Head_Item_Right"><img src="Images/User_Icon.jpg" alt="profile picture" id="Head_Item_Right_Image" onclick="displayProfileDropdown()"></li>
+    </ul>
+</div>
+
+<div id="Head_DropMenu">
+    <p>I'm typing here to test some stuff</p>
+</div>
+
+
+<br>
+<div class="justify-content" id="Image_Container" > 
+    <div class="row">
+        <div class="col-sm" id="reg_img_div"><img src="Images/GameCovers/Arms.png" id="reg_img" alt="FMF Poster" align="middle"></div>
+        <div class="col-sm" id="reg_img_div"><img src="Images/GameCovers/Celeste.png" id="reg_img" alt="FMF Poster" align="middle"></div>
+        <div class="col-sm" id="reg_img_div"><img src="Images/GameCovers/DarkSouls.jpg" id="reg_img" alt="FMF Poster" align="middle"></div>
+        <div class="col-sm" id="reg_img_div"><img src="Images/GameCovers/DQBuilder.jpg" id="reg_img" alt="FMF Poster" align="middle"></div>
+        <div class="col-sm" id="reg_img_div"><img src="Images/GameCovers/DragonsDogma.jpg" id="reg_img" alt="FMF Poster" align="middle"></div>
+        <div class="col-sm" id="reg_img_div"><img src="Images/GameCovers/Fortnite.jpg" id="reg_img" alt="FMF Poster" align="middle"></div>
+        <div class="col-sm" id="reg_img_div"><img src="Images/GameCovers/HollowKnight.jpg" id="reg_img" alt="FMF Poster" align="middle"></div>
+        <div class="col-sm" id="reg_img_div"><img src="Images/GameCovers/MarioKart.jpg" id="reg_img" alt="FMF Poster" align="middle"></div>
+        <div class="col-sm" id="reg_img_div"><img src="Images/GameCovers/MarioOdyssey.jpg" id="reg_img" alt="FMF Poster" align="middle"></div>
+        <div class="col-sm" id="reg_img_div"><img src="Images/GameCovers/MarioRabbids.jpg" id="reg_img" alt="FMF Poster" align="middle"></div>
+        <div class="col-sm" id="reg_img_div"><img src="Images/GameCovers/MonsterHunter.jpg" id="reg_img" alt="FMF Poster" align="middle"></div>
+        <div class="col-sm" id="reg_img_div"><img src="Images/GameCovers/Octopath.jpg" id="reg_img" alt="FMF Poster" align="middle"></div>
+        <div class="col-sm" id="reg_img_div"><img src="Images/GameCovers/RocketLeague.png" id="reg_img" alt="FMF Poster" align="middle"></div>
+        <div class="col-sm" id="reg_img_div"><img src="Images/GameCovers/Skyrim.jpg" id="reg_img" alt="FMF Poster" align="middle"></div>
+        <div class="col-sm" id="reg_img_div"><img src="Images/GameCovers/SmashBros.jpg" id="reg_img" alt="FMF Poster" align="middle"></div>
+        <div class="col-sm" id="reg_img_div"><img src="Images/GameCovers/StardewValley.jpg" id="reg_img" alt="FMF Poster" align="middle"></div>
+        <div class="col-sm" id="reg_img_div"><img src="Images/GameCovers/SuperMarioParty.jpg" id="reg_img" alt="FMF Poster" align="middle"></div>
+        <div class="col-sm" id="reg_img_div"><img src="Images/GameCovers/TowerFall.png" id="reg_img" alt="FMF Poster" align="middle"></div>
+        <div class="col-sm" id="reg_img_div"><img src="Images/GameCovers/UltimateChickenHorse.jpg" id="reg_img" alt="FMF Poster" align="middle"></div>
+        <div class="col-sm" id="reg_img_div"><img src="Images/GameCovers/ZeldaBOTW.jpg" id="reg_img" alt="FMF Poster" align="middle"></div>
+    </div>
+
+    <!--ul id="Board_List">
+        <li class="img_test" id="Board_List_Item"><img src="Images/MoviePosters/FMF.jpg" alt="FMF Poster"></li>
+        <li id="Board_List_Item"><img src="Images/MoviePosters/FMF.jpg" alt="FMF Poster"></li>
+        <li id="Board_List_Item"><img src="Images/MoviePosters/FMF.jpg" alt="FMF Poster"></li>
+        <li id="Board_List_Item"><img src="Images/MoviePosters/FMF.jpg" alt="FMF Poster"></li>
+        <li id="Board_List_Item"><img src="Images/MoviePosters/FMF.jpg" alt="FMF Poster"></li>
+        <li id="Board_List_Item"><img src="Images/MoviePosters/FMF.jpg" alt="FMF Poster"></li>
+        <li id="Board_List_Item"><img src="Images/MoviePosters/FMF.jpg" alt="FMF Poster"></li>
+        <li id="Board_List_Item"><img src="Images/MoviePosters/FMF.jpg" alt="FMF Poster"></li>
+        <li id="Board_List_Item"><img src="Images/MoviePosters/FMF.jpg" alt="FMF Poster"></li>
+        <li id="Board_List_Item"><img src="Images/MoviePosters/FMF.jpg" alt="FMF Poster"></li>
+        <li id="Board_List_Item"><img src="Images/MoviePosters/FMF.jpg" alt="FMF Poster"></li>
+        <li id="Board_List_Item"><img src="Images/MoviePosters/FMF.jpg" alt="FMF Poster"></li>
+        <li id="Board_List_Item"><img src="Images/MoviePosters/FMF.jpg" alt="FMF Poster"></li>
+        <li id="Board_List_Item"><img src="Images/MoviePosters/FMF.jpg" alt="FMF Poster"></li>
+        <li id="Board_List_Item"><img src="Images/MoviePosters/FMF.jpg" alt="FMF Poster"></li>
+    </ul-->
+    <a href="https://github.com/nttgrt/WebProgramming/upload/CreativeAssignment1">GitHub Link</a>
+</div>
+
+
+</body>
+
+</html>
